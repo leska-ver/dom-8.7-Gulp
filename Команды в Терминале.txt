@@ -1,0 +1,61 @@
+1. npn init
+2. npm install gulp-cli -D
+3. npm i gulp -D
+4. npm install node-sass gulp-sass --save-dev
+5. npm i --save-dev gulp-sourcemaps
+6. npm i gulp-notify -D
+7. npm install --save-dev gulp-autoprefixer
+8. npm i gulp-rename -D
+9. npm i gulp-clean-css -D
+- gulp styles
+//deleting the wrong downloaded library
+- npm uninstall gulp-...
+10. npm install browser-sync --save-dev
+11. npm install --save-dev gulp-file-include
+12. npm install --save-dev gulp-svg-sprite
+13. npm install --save-dev gulp-svgo
+14. npm i -D del
+//if you haven 't been for a long time
+- npm i (or npm install)
+- gulp default (or gulp dev(if he has written - export.dev))
+15. npm install --save-dev gulp-babel
+16. npm install --save-dev @babel/core @babel/preset-env babel-loader
+17. npm install --save-dev gulp-uglify-es
+18. npm install --save-dev gulp-rev
+19. npm install --save-dev gulp-rev-rewrite
+20. npm install --save-dev gulp-rev-delete-original
+21. npm install --save-dev gulp-htmlmin
+22. npm install --save-dev gulp-if
+//With the new version, imagemin gave an error, with the penultimate one - the same thing. We specify a specific version.
+23. npm i gulp-imagemin@7.1.0 -D
+24. npm install --save normalize-scss -D
+- gulp dev
+25. npm i jquery -D
+26. npm - jquery-ui -D
+27. npm i -D inputmask
+28. npm i -D just-validate normalize-scss
+- gulp dev
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,225 @@
+@import "../mixins/_breakpoint.scss";
+
+/***О студии-about***/
+.about {
+  padding: 31px 0 70px;
+  background-color: var(--color-mine-shaft);
+
+  &__container {
+    display: flex;
+  }
+
+  &__left {
+    margin-right: 40px;
+    width: calc(48% + 3px);
+  
+    &-h3 {
+      margin-bottom: 5px;
+      color: var(--color-white);
+    }
+  }
+
+  &__desrc {
+    line-height: 28px;
+    color: var(--color-white);
+  }
+
+  /*Правая колонка*/
+  &__right {
+    padding-top: 32px;
+    width: 49%;
+  }
+
+  &__camera-jpg {
+    margin-bottom: 23px;
+    width: 100%;
+    height: 70%;
+    background-image: url("../img/camera.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__right-h4 {
+    margin-bottom: 16px;
+    font-size: 23px;
+    color: var(--color-white);
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__block {
+    &-input {
+    margin-right: 29px;
+    width: 100%;
+    }
+
+    &-input:focus input[type="email"]::-webkit-input-placeholder {
+      outline: none;
+      color: var(--color-burning-orange);
+    } 
+
+    &-input:focus input[type="email"]::-moz-input-placeholder {
+      outline: none;
+      color: var(--color-burning-orange);
+    }
+  }
+
+  &__input {
+    padding: 15px 23px;
+    border: 1px solid var(--color-tundora);
+    width: 100%;
+    color: var(--color-white);
+    background-color: var(--color-tundora);
+    outline: none;
+  
+    &::placeholder {
+      color: var(--color-silver);  
+    }
+
+    &:focus::placeholder {
+      color: var(--color-burning-orange);  
+    }
+
+    &:hover {
+      border: 1px solid var(--color-burning-orange);  
+    }
+  }
+
+  &__button {
+    padding: 13px 20px;
+    background-color: var(--color-burning-orange);
+    transition: border .4s ease-in-out, background-color .4s ease-in-out;
+  
+    &:focus {
+      border: 3px solid var(--color-tuscany); 
+      outline: none;
+      background-color: var(--color-tuscany);
+    }
+
+    &:hover {
+      border: 3px solid var(--color-grenadier)
+    }
+
+    &n:active {
+      border: 3px solid transparent;
+      background-color: var(--color-grenadier);
+    }
+  }
+}
+
+@include desktop {
+  .about {
+    padding-bottom: 88px;
+
+    &__left {
+      margin-right: 30px;
+      width: 49%;
+    }
+
+    /*Правая колонка*/
+    &__right {
+      padding-top: 15px;
+    }
+
+    &__form {
+      display: block;
+    }
+
+    &__camera-jpg {
+      margin-bottom: 5px;
+      background-image: url("../img/camera-1024.jpg");
+    }
+
+    &__block-input {
+      margin-right: 0;
+      margin-bottom: 21px;
+    } 
+
+    &__input {
+      width: 73%;
+    }
+  }
+}
+
+@include tablet {
+  .about {
+    padding-bottom: 62px;
+  
+    &__right {
+      padding-top: 33px;
+    }
+
+    &__camera-jpg {
+      margin-bottom: 23px;
+      height: 569px;
+      background-image: url("../img/camera-768.jpg");
+      background-size: cover;
+    }
+
+    &__block-input {
+      margin-bottom: 20px;
+    }
+
+    &__input {
+      width: 100%;
+    }
+  }
+}
+
+@include mobile {
+  .about {
+    padding: 28px 0 60px;
+
+    &__container {
+      flex-direction: column;
+    }
+
+    &__left {
+      margin-right: 0;
+      width: 100%;  
+    
+      &-h3 {
+        margin-bottom: 1px;
+        font-size: 18px;  
+      }
+    }
+
+    &__desrc {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__right {
+      padding-top: 23px;
+      width: 100%;  
+    }
+
+    &__camera-jpg {
+      margin-bottom: 25px;
+      height: 278px;
+      background-image: url("../img/camera-320.jpg");
+    }
+
+    &__right-h4 {
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    &__block-input {
+      margin-bottom: 19px;
+    }
+
+    &__input {
+      padding: 12px 23px;
+      font-size: 13px;
+    }
+
+    &__button {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+  }
+}

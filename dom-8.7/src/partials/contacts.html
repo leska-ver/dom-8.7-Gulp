@@ -1,0 +1,55 @@
+<section class="contacts" id="contacts">
+  <div class="container contacts__container">
+    <h3 class="contacts__h3 title-h3">Контакты</h3>
+    <div class="contacts__block contacts__grid">
+      <div class="contacts__relative">
+        <div class="contacts__modal">
+          <button class="contacts__close contacts__btn" id="contacts__close-id" type="submit" aria-label="Свернуть">
+            <span></span>
+            <span></span>
+          </button>
+          <h4 class="contacts__left-h4 title-h4">Студия “High pass”</h4>
+          <address class="contacts__address">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж
+            8, офис № 82 
+            <a href="tel:+7(495)42-423-532" class="contacts__link">
+              <svg width="20" height="30" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.675 12.8167C15.65 12.8167 14.6583 12.65 13.7333 12.35C13.4417 12.25 13.1167 12.325 12.8917 12.55L11.5833 14.1917C9.225 13.0667 7.01667 10.9417 5.84167 8.5L7.46667 7.11667C7.69167 6.88333 7.75833 6.55833 7.66667 6.26667C7.35833 5.34167 7.2 4.35 7.2 3.325C7.2 2.875 6.825 2.5 6.375 2.5H3.49167C3.04167 2.5 2.5 2.7 2.5 3.325C2.5 11.0667 8.94167 17.5 16.675 17.5C17.2667 17.5 17.5 16.975 17.5 16.5167V13.6417C17.5 13.1917 17.125 12.8167 16.675 12.8167Z"
+                  fill="#FF6E30"></path>
+              </svg>
+              <span class="contacts__spanPhone">+7(495)42-423-532</span>
+            </a>  
+          </address>            
+        </div>
+        <div class="contacts__map" id="map"></div>
+      </div>
+      <div class="contacts__contacts">
+        <div class="contacts__text">
+          <h4 class="contacts__right-h4 title-h4">Оставить заявку</h4>
+          <p class="contacts__desrc desrc-p">Оставьте ваши данные, указав в графе “Комментарий” желаемые время и
+            дату съемки или другого мероприятия</p>
+        </div>
+        <div class="contacts__block-form">
+          <form class="contacts__form" aria-label="Заказать обратный звонок"
+            action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <!--mail.php-->
+            <div class="contacts__block-input">
+              <!--data здесь он обрабатывает плагин валидатор кода-->
+              <input class="contacts__input" aria-label="Введите ваше имя" type="text" name="Имя" placeholder="Имя"
+                data-validate-field="name" required>
+            </div>
+            <div class="contacts__block-input">
+              <input class="contacts__input" type="email" name="email" placeholder="E-mail" id="email"
+                data-validate-field="mail" minlength="7" maxlength="25" required>
+            </div>
+            <div class="contacts__block-input">
+              <textarea class="contacts__textarea" name="textarea" placeholder="Комментарий" minlength="5"
+                maxlength="2250"></textarea>
+            </div>
+            <button type="submit" class="contacts__button btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

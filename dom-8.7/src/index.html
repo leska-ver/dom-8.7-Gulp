@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>High pass</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <!-- Теперь всё это в папке main.min.css-->
+  <!-- <link rel="stylesheet" href="css/vendor.css"> -->
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+</head>
+<body>
+	<!-- Для семантики если нет заголовка h1 в вёрстке. Ставим скрытый заголовок.-->
+  <h1 class="visually-hidden">Я для семантики</h1>
+  @include('partials/header.html')
+  <main>
+    @include('partials/photoset.html')
+    @include('partials/about.html')
+    @include('partials/projects.html')
+    @include('partials/contacts.html')
+  </main>
+  @include('partials/footer.html')
+
+
+
+
+   <!--Аккордеон тоже самое и для бургера-->
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> полная библиотека-->
+  
+  <!-- В main.js поставили библиотеку jquery, а здесь не удалять -->
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
+  <!--минифицированный библиотека-->
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> полная библиотека-->
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> -->
+  <!--минифицированный библиотека-->
+
+  <!--Яндекс карта-->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/main.js"></script>
+  
+  <!--Валидатор input-ов. Код скопирован урок 16.7-->
+  <!-- В main.js поставили библиотеку just-validate, а здесь не удалять -->
+  <!-- <script src="js/just-validate.js"></script> -->
+
+  <!--Маска формы input-ов. Для телефона ур.16.7-->
+  <!-- В main.js поставили библиотеку inputmask, а здесь не удалять -->
+  <!-- <script src="js/inputmask.min.js"></script> -->
+
+
+  <!-- Мои В main.js поставили, а здесь не удалять-->
+  <!-- <script src="js/projectHigh.js"></script> -->
+  <!-- <script src="js/burger.js"></script> -->
+  <!-- <script src="js/search-mobile.js"></script> -->
+  <!-- <script src="js/map.js"></script> -->
+  <!-- <script src="js/contacts.js"></script> -->
+
+  <!-- Пол Уокер
+
+  <svg>
+    <use xlink:href="img/sprite.svg#test"></use>
+  </svg> -->
+</body>
+</html>
