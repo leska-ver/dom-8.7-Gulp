@@ -1,5 +1,4 @@
 const {src, dest, parallel, series, watch} = require('gulp');
-const autoPrefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify-es').default;
 const sass = require('gulp-sass')(require('node-sass'));
