@@ -1,5 +1,5 @@
 В гитхабе как открыть Gulp в браузере - dom-8.7-Gulp/dom-8.7/dist/ - Settings/Pages/https://leska-ver.github.io/dom-8.7-Gulp/ - в браузере дописываем dom-8.7/dist/index.html
-1. npn init
+1. npm init
 2. npm install gulp-cli -D
 3. npm i gulp -D
 4. npm install node-sass gulp-sass --save-dev
